@@ -1,0 +1,372 @@
+.nav-bar{
+    display:flex;
+    color:rgba(241, 240, 240, 0.88);
+    justify-content: space-evenly;
+    background-color: rgb(23 108 255);
+    position:relative;
+    /* top: 30px; */
+    font-weight: bold;
+    /* padding: 1px; */
+    margin: 0px;
+    font-style:normal;
+    
+
+
+}
+
+.search{
+    position: relative;
+    top: 39px;
+    border-radius: 10px;
+}
+button{
+    position: relative;
+    left: 15px;
+    border-radius: 2px soild black;
+}
+
+
+h1{
+    position: relative;
+    bottom: 30px;
+    right: 40px;
+    color: white;
+}
+img{
+   width: 72px;
+   height: 45px;
+   position: relative;
+   bottom:-17px;
+   right: -7px;
+}
+button{
+    color: white;
+    padding: 8px;
+    background-color: rgba(22, 14, 0, 0.007);
+    border-radius: 20px;
+    position: relative;
+    border: 1px solid white;
+    top: 40px;
+    right: 77px;
+
+}
+p{
+    color: rgb(225, 232, 11);
+    position: relative;
+    top: 23px;
+    right: 180px;
+    font-weight: bold;
+}
+a{
+    color: rgb(255, 255, 255);
+    text-align: center;
+    position: relative;
+    text-decoration: none;
+    top: 43px;
+    background-color:transparent;
+    /* background-color: black; */
+    /* text-decoration: none; */
+    
+    
+}
+a:hover{
+    color: rgb(255, 251, 4);
+    box-shadow: inset;
+    animation: backwards;
+
+}
+.box1{
+    grid-area: one;
+    background-image: url("girl.avif");
+    background-size: cover;
+    
+   
+   
+}
+.box2{
+    color: white;
+    grid-area: two;
+    background-image: url("stylishmen.avif");
+    background-size: cover  ;
+    
+    
+}
+.box3{
+    grid-area: three;
+    background-image: url("stylishwomen2.jpg");
+    background-size: cover;
+   
+}
+.box4{
+    grid-area: four;
+    background-image: url("kid1.avif");
+    background-size: cover;
+  
+}
+.box5{
+    grid-area: five;
+    background-image: url("accessories.avif");
+    background-size: cover;
+
+ 
+   
+}
+.container{
+    margin: 0px;
+    display: grid;
+    grid-template-areas:
+    'one one two three'
+    'one one four five' ;
+    /* grid-template-columns: 50px 20px 20px ; */
+    /* grid-template-rows: 50px auto auto ; */
+    gap: 10px;
+    width: 350x;
+    /* padding: 10px; */
+    position: relative;
+    left: 5px;
+    /* padding: 10px; */
+    /* border: 2px solid black; */
+}
+.container >div{
+    /* background-color: black; */
+    padding: 85px;
+    /* gap: 20px; */
+    color: white;
+    position: relative;
+    top: 0px;
+    border: 2px solid rgb(252, 246, 246);
+    font-size: xx-large;
+    cursor: pointer;
+    /* text-align:left */
+
+}
+
+/* deals */
+.deal1{
+    grid-area: one;
+    background-image: url(./SharedScreenshot1.jpg);
+    background-size: cover;
+}
+.deal2{
+    grid-area: two;
+    background-image: url(./SharedScreenshot2.jpg);
+    background-size: cover;
+}
+.deal3{
+    grid-area: three;
+    background-image: url(./SharedScreenshot3.jpg);
+    background-size: cover;
+
+}
+.deal4{
+    grid-area: four;
+    background-image: url(./SharedScreenshot4.jpg);
+    background-size: cover;
+}
+.deal5{
+    grid-area: five;
+    background-image: url(./SharedScreenshot5.jpg);
+    background-size: cover;
+}
+.deal6{
+    grid-area: six;
+    background-image: url(./SharedScreenshot6.jpg);
+    background-size: cover;
+}
+
+.Deals{
+    display: grid;
+    grid-template-areas:
+    'one two three'
+    'four five six' ;
+    gap: 10px;
+    width: 350x;
+    /* padding: 10px; */
+    position: relative;
+    left: 5px;
+    padding: 10px;
+    /* border: 2px solid black; */
+}
+.Deals >div{
+    /* background-color: black; */
+    padding: 85px;
+    /* gap: 20px; */
+    color: white;
+    position: relative;
+    top: 0px;
+    border: 2px solid rgb(252, 246, 246);
+    font-size: xx-large;
+    /* text-align:left */
+}
+
+/* .Loved */
+
+
+.gift1{
+    grid-area: one;
+    background-image: url(./camera.avif);
+    background-size: cover;
+    
+}
+
+.gift2{
+    grid-area: two;
+    background-image: url(./headphone1.avif);
+    background-size: cover;
+    
+}
+.gift3{
+    grid-area: three;
+    background-image: url(./laptop.avif);
+    background-size: cover;
+}
+.gift4{
+    grid-area: four;
+    background-image: url(./smartwatch.avif);
+    background-size: cover;
+}
+.gift5{
+    grid-area: five;
+    background-image: url(./iphone.avif);
+    background-size: cover;
+}
+
+
+.Loved{
+    display: grid;
+    grid-template-areas: 
+    'one two five'
+    'three four five';
+    gap: 10px;
+    border: 2px soild black;
+    cursor: pointer;
+    /* padding: 20px; */
+
+}
+.Loved >div{
+    /* padding: 100px; */
+    border: 1px solid black;
+    gap: 10px;
+    padding: 100px;
+}
+
+ 
+
+
+/* Flipkart special offer */
+
+.img1{
+    grid-area: one;
+    background-image: url(./width.webp);
+    background-size: cover;
+    font-size: larger;
+    color: white;
+
+}
+.img2{
+    grid-area: two;
+    background-image: url(./width3.webp);
+    background-size: cover;
+}
+.img3{
+    grid-area: three;
+    background-image: url(./width4.webp);
+    background-size: cover;
+    position: relative;
+    /* right: 100px; */
+
+}
+.img4{
+    grid-area: four;
+    background-image: url(./width2.webp);
+    background-size: cover;
+
+}
+h2:hover{
+    color: rgb(58, 173, 255);
+    font-weight: 900;
+    cursor: pointer;
+}
+
+
+
+.bestseller{
+    display: grid;
+    grid-template-areas:
+    'one one  '
+    'two three'
+    'four four ';
+    gap: 10px;
+}
+
+.bestseller >div{
+    padding: 80px;
+    border: 1px solid black;
+}
+
+
+
+/* bestseller */
+
+.item1{
+    grid-area: one;
+    background-image: url(./cloths/carlos-torres-fouVDmGXoPI-unsplash.jpg);
+    background-size: cover;
+ }
+ .item2{
+    grid-area: two;
+    background-image: url(./cloths/deanna-alys-6LBBOwkPzyQ-unsplash\ \(1\).jpg);
+    background-size: cover;
+ }
+ .item3{
+    grid-area: three;
+    background-image: url(./cloths/michela-ampolo-7tDGb3HrITg-unsplash.jpg);
+    background-size: cover;
+ }
+ .item4{
+    grid-area: four;
+    background-image: url(./cloths/paolo-giubilato-ZwKCWVFdrcs-unsplash.jpg);
+    background-size: cover;
+ }
+ .item5{
+    grid-area: five;
+    background-image: url(./cloths/pharma-hemp-complex-LvZqsx-vJL8-unsplash.jpg);
+    background-size: cover;
+ }
+ .item6{
+    grid-area: six;
+    background-image: url(./cloths/ryan-quintal-xioKwVlp5jE-unsplash.jpg);
+    background-size: cover;
+ }
+
+.items{
+    display: grid;
+    grid-template-areas: 'one two three four five six';
+    gap: 10px;
+    border: 1px solid black;
+}
+.items >div{
+    padding: 60px;
+    /* gap: 10px; */
+    border: 1px solid black;
+    text-align: end;
+    color: white;
+    font-size: larger;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.paragraph{
+    color: rgb(166, 159, 159);
+}
+
+.About{
+    display: grid;
+    background-color:black;
+    color: white;
+    font-size: small;
+    padding: 20PX;
+    grid-template-columns: repeat(6,1fr);
+    column-gap: 20px;
+    text-decoration: none;
+}
